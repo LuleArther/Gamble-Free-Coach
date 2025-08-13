@@ -1,0 +1,124 @@
+.checkin {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.checkin-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.checkin-form .card {
+  background: white;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-light);
+  margin-bottom: 1.5rem;
+}
+
+.urge-level {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  width: 60px;
+  height: 60px;
+  padding: 0.5rem;
+}
+
+.urge-emoji {
+  font-size: 1.5rem;
+}
+
+.urge-number {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.scale-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+.gamble-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gamble-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem 1rem;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.gamble-option:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.gamble-option.selected {
+  border-color: var(--primary);
+  background: var(--bg);
+}
+
+.gamble-option.selected.success {
+  border-color: var(--success);
+  background: rgba(16, 185, 129, 0.05);
+}
+
+.gamble-option.selected.danger {
+  border-color: var(--danger);
+  background: rgba(239, 68, 68, 0.05);
+}
+
+.gamble-icon {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.gamble-option.selected.success .gamble-icon {
+  color: var(--success);
+}
+
+.gamble-option.selected.danger .gamble-icon {
+  color: var(--danger);
+}
+
+.slip-details {
+  background: var(--bg-secondary);
+}
+
+.encouragement {
+  color: var(--text-light);
+  font-style: italic;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.success-message {
+  text-align: center;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05));
+  border: 1px solid var(--success);
+}
+
+.success-message h3 {
+  color: var(--success);
+  margin: 1rem 0 0.5rem;
+}
+
+.success-message p {
+  color: var(--text);
+}

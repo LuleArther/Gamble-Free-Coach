@@ -1,0 +1,143 @@
+.home {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+
+.home-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home-header p {
+  font-size: 1.25rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.user-dashboard {
+  margin-bottom: 3rem;
+}
+
+.streak-display {
+  max-width: 400px;
+  margin: 0 auto 2rem;
+  box-shadow: var(--shadow-xl);
+  border: none;
+  padding: 2rem;
+}
+
+.goal-progress {
+  text-align: center;
+  background: white;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.goal-progress h3 {
+  color: var(--primary-dark);
+  font-size: 1.5rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--bg-tertiary);
+  margin-top: 1.5rem;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.progress-bar::-webkit-progress-bar {
+  background: var(--bg-tertiary);
+  border-radius: 20px;
+}
+
+.progress-bar::-webkit-progress-value {
+  background: linear-gradient(90deg, var(--primary), var(--primary-light));
+  border-radius: 20px;
+  transition: width 0.5s ease;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
+}
+
+.progress-bar::-moz-progress-bar {
+  background: linear-gradient(90deg, var(--primary), var(--primary-light));
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
+}
+
+.home-actions {
+  margin-top: 2rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.guest-welcome {
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.guest-welcome .card {
+  background: white;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-light);
+  padding: 2rem;
+}
+
+.guest-welcome h2 {
+  color: var(--primary-dark);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.quick-help-cta {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.05), rgba(239, 68, 68, 0.02));
+  border: 2px solid rgba(239, 68, 68, 0.2);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-md);
+}
+
+.quick-help-cta h2 {
+  color: var(--danger);
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.quick-help-cta p {
+  color: var(--text);
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .home {
+    padding: 3rem 2rem;
+  }
+  
+  .home-header h1 {
+    font-size: 3.5rem;
+  }
+}
