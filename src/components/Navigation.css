@@ -20,11 +20,12 @@
   align-items: center;
   gap: 0.25rem;
   padding: 0.5rem;
-  color: var(--text-light);
+  color: var(--text-muted);
   text-decoration: none;
-  transition: all 0.2s;
+  transition: var(--transition);
   position: relative;
   min-width: 60px;
+  font-family: var(--font-body);
 }
 
 .nav-item:hover {

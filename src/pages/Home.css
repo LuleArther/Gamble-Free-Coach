@@ -13,12 +13,10 @@
 
 .home-header h1 {
   font-size: 2.5rem;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 0.75rem;
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary);
+  font-family: var(--font-heading);
 }
 
 .home-header p {
@@ -35,9 +33,11 @@
 .streak-display {
   max-width: 400px;
   margin: 0 auto 2rem;
-  box-shadow: var(--shadow-xl);
+  box-shadow: var(--shadow-md);
   border: none;
   padding: 2rem;
+  background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+  color: var(--text);
 }
 
 .goal-progress {

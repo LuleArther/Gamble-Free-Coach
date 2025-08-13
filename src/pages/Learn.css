@@ -38,16 +38,19 @@
 }
 
 .learn-card {
-  background: var(--bg);
-  border: 1px solid var(--border);
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
   border-radius: var(--radius);
-  padding: 1.5rem;
+  padding: 1.75rem;
   text-align: left;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: var(--transition);
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
 }
 
 .learn-card:hover {
